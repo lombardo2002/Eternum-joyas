@@ -1,0 +1,9 @@
+.volver {
+    background: none;
+    border: none;
+    color: #8a6f5a;
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.volver:hover { opacity: .7; }

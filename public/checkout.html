@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <title>Checkout</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background:#f4f1ee; }
+        .pasos { display:flex; justify-content:space-around; padding:20px; background:#d5c3b8; }
+        .paso { padding:10px 20px; border-radius:20px; background:#b8a79c; color:white; }
+        .contenedor { max-width:600px; margin:20px auto; background:white; padding:20px; border-radius:12px; }
+        .hidden { display:none; }
+        button { padding:12px 20px; border:none; border-radius:8px; background:#a88976; color:white; cursor:pointer; margin-top:10px; }
+        button:hover { opacity:0.9; }
+        input { margin-bottom:10px; }
+    </style>
+</head>
+<body>
+    <div class="pasos">
+        <div class="paso">1.Tu carrito</div>
+        <div class="paso">2. Tus datos</div>
+        <div class="paso">3. Envío</div>
+        <div class="paso">4. Pago</div>
+    </div>
+
+    <div class="contenedor">
+
+        <!-- PASO 2 -->
+        <div id="paso-2">
+            <h2>Tus datos</h2>
+            <label> Nombre completo</label>
+            <input type="text" style="width:100%;padding:10px;" />
+
+            <label> Email </label>
+            <input type="text" style="width:100%;padding:10px;" />
+
+            <label>Teléfono</label>
+            <input type="text" style="width:100%;padding:10px;" />
+
+            <button id="continuar-envio">Continuar</button>
+        </div>
+
+        <!-- PASO 3 -->
+        <div id="paso-3" class="hidden">
+            <h2>Dirección de envío</h2>
+
+            <label>Calle y número</label>
+            <input type="text" style="width:100%;padding:10px;" />
+
+            <label>Ciudad</label>
+            <input type="text" style="width:100%;padding:10px;" />
+
+            <label>Código postal</label>
+            <input type="text" style="width:100%;padding:10px;" />
+
+            <button id="continuar-pago">Continuar</button>
+        </div>
+
+        <!-- PASO 4 -->
+        <div id="paso-4" class="hidden">
+            <h2>Método de pago</h2>
+            <p>Elegí un método</p>
+            <button>Tarjeta</button>
+            <button>Mercado Pago</button>
+            <button>Efectivo</button>
+        </div>
+    </div>
+
+    <script>
+        // Paso 2 → paso 3
+        document.getElementById("continuar-envio").onclick = () => {
+            document.getElementById("paso-2").classList.add("hidden");
+            document.getElementById("paso-3").classList.remove("hidden");
+        };
+
+        // Paso 3 → paso 4
+        document.getElementById("continuar-pago").onclick = () => {
+            document.getElementById("paso-3").classList.add("hidden");
+            document.getElementById("paso-4").classList.remove("hidden");
+        };
+    </script>
+
+    <button id="btn-volver" class="volver">←</button>
+    
+
+
+</body>
+</html>

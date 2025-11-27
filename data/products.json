@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "Lifting de pestañas",
+        "precio": 7000,
+        "descripcion": "Lifting + botox + tinte",
+        "imagen": "/img/lifting.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Perfilado de cejas",
+        "precio": 4500,
+        "descripcion": "Perfilado + henna",
+        "imagen": "/img/cejas.jpg"
+    }
+]
