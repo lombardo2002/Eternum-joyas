@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>carrito</title>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrito</title>
 
-    <link rel="stylesheet" href="./css/carrito.css">
-</head>
-<body>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/carrito.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
-    <h1 class="titulo">Carrito de compras</h1>
+    <!-- ICONOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-    <div id="carrito-container"></div>
+  <body>
 
-    <h2 id="total"></h2>
+    <div id="header"></div>
 
-    <div class="cart-buttons">
-        <button id="vaciar-carrito">Vaciar Carrito</button>
-        <button id="finalizar">Finalizar Compra</button>
-    </div>
+    <main class="container carrito-box">
+      <h1 class="titulo">Carrito de compras</h1>
 
-    <script src="./js/include.js"></script>
-    <script src="./js/carrito.js"></script>
-    
-</body>
+      <div id="carrito-container"></div>
+      <h2 id="total" class="total"></h2>
+
+      <div class="botones">
+        <button id="vaciar-carrito" class="btn vaciar">Vaciar Carrito</button>
+        <button id="finalizar" class="btn finalizar">Finalizar Compra</button>
+      </div>
+    </main>
+
+    <!-- FOOTER AUTOMÁTICO -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/include.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/carrito.js"></script>
+  </body>
 </html>

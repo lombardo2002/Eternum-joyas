@@ -56,3 +56,10 @@
 .btn-agregar:hover{
     background: #444;
 }
+
+.products-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}

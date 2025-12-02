@@ -1,9 +1,12 @@
-.volver {
-    background: none;
+#btn-volver {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #a88976;
+    color: white;
     border: none;
-    color: #8a6f5a;
-    font-size: 16px;
-    margin-right: 15px;
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
 }
-.volver:hover { opacity: .7; }

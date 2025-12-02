@@ -1,7 +1,81 @@
-<header style="padding: 15px; background: #f3f3f3;">
-    <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/productos.html">Productos</a>
-        <a href="/contacto.html">Contacto</a>
-    </nav>
-</header>
+<nav class="header">
+
+    <!-- IZQUIERDA: LOGO -->
+    <div class="header-left">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Eternum">
+        </a>
+    </div>
+
+    <!-- CENTRO: MENU -->
+    <ul class="menu">
+
+        <!-- ICONO HOME -->
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </li>
+
+        <!-- PRODUCTOS -->
+        <li class="dropdown">
+            <a href="#" class="drop-btn">
+                Productos <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <!-- MEGA MENÚ -->
+            <ul class="submenu">
+
+                <!-- ORO -->
+                <li class="sub-item">
+                    <span>Oro</span>
+                    <ul class="sub-submenu">
+                        <li><a href="#">Pulseras</a></li>
+                        <li><a href="#">Cadenas</a></li>
+                        <li><a href="#">Aros</a></li>
+                        <li><a href="#">Anillos</a></li>
+                    </ul>
+                </li>
+
+                <!-- PLATA -->
+                <li class="sub-item">
+                    <span>Plata</span>
+                    <ul class="sub-submenu">
+                        <li><a href="#">Pulseras</a></li>
+                        <li><a href="#">Cadenas</a></li>
+                        <li><a href="#">Aros</a></li>
+                        <li><a href="#">Anillos</a></li>
+                    </ul>
+                </li>
+
+                <!-- ACERO -->
+                <li class="sub-item">
+                    <span>Acero Quirúrgico</span>
+                    <ul class="sub-submenu">
+                        <li><a href="#">Pulseras</a></li>
+                        <li><a href="#">Cadenas</a></li>
+                        <li><a href="#">Aros</a></li>
+                        <li><a href="#">Anillos</a></li>
+                    </ul>
+                </li>
+
+                <li class="ver-todo"><a href="#">Ver todo</a></li>
+            </ul>
+        </li>
+
+        <!-- CONTACTO -->
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+    </ul>
+
+    <!-- DERECHA: CARRITO -->
+    <div class="header-right">
+        <a href="carrito.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
+    </div>
+
+</nav>

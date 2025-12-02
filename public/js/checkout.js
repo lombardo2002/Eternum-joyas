@@ -60,10 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         totalPaso1.textContent = "Total: $" + total;
+
     });
+
+    document.getElementById("btn-volver").onclick = () => history.back();
     
-    document.getElementById("btn-volver").onclick = () => {
-    history.back();
-};
 
 }) ;

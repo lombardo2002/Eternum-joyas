@@ -17,6 +17,9 @@
     </style>
 </head>
 <body>
+
+    <button id="btn-volver" class="volver"></button>
+
     <div class="pasos">
         <div class="paso">1.Tu carrito</div>
         <div class="paso">2. Tus datos</div>
@@ -81,8 +84,12 @@
         };
     </script>
 
-    <button id="btn-volver" class="volver">←</button>
-    
+    <script>
+        document.getElementById("btn-volver").addEventListener("click", () => {
+            history.back();
+        });
+    </script>
+
 
 
 </body>
