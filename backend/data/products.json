@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pulsera Cartier Oro",
+        "material": "oro",
+        "tipo": "pulseras",
+        "precio": 7000,
+        "descripcion": "Pulsera estilo Cartier en oro.",
+        "imagen": "img/productos/WhatsApp Image 2025-11-27 at 19.08.56.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "Cadena Fina Plata",
+        "material": "plata",
+        "tipo": "cadenas",
+        "precio": 4500,
+        "descripcion": "Cadena delicada de plata 925.",
+        "imagen": "img/productos/WhatsApp Image 2025-11-27 at 19.08.54.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Aros de Acero Quirúrgico",
+        "material": "acero",
+        "tipo": "aros",
+        "precio": 9000,
+        "descripcion": "Aros resistentes de acero quirúrgico.",
+        "imagen": "img/productos/WhatsApp Image 2025-11-27 at 19.08.55.jpeg"
+    }
+]
+
